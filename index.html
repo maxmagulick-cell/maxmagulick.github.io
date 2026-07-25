@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Max Magulick — AI-Native IT Professional</title>
+<title>Max Magulick — IT Support Professional</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -39,41 +39,27 @@
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255,255,255,0.06);
   }
-  .nav-logo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 22px;
-    letter-spacing: 3px;
-    color: var(--accent);
-  }
-  .nav-links { display: flex; gap: 32px; list-style: none; }
+  .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 3px; color: var(--accent); }
+  .nav-links { display: flex; gap: 30px; list-style: none; }
   .nav-links a {
-    color: var(--gray);
-    text-decoration: none;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    transition: color 0.2s;
+    color: var(--gray); text-decoration: none; font-size: 12px;
+    letter-spacing: 2px; text-transform: uppercase; transition: color 0.2s;
   }
   .nav-links a:hover { color: var(--white); }
 
+  /* HERO */
   .hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 120px 48px 80px;
-    position: relative;
-    overflow: hidden;
+    min-height: 100vh; display: flex; align-items: center;
+    padding: 120px 48px 80px; position: relative; overflow: hidden;
   }
   .hero-bg {
-    position: absolute;
-    inset: 0;
+    position: absolute; inset: 0;
     background:
       radial-gradient(ellipse 60% 60% at 80% 50%, rgba(200,255,0,0.04) 0%, transparent 70%),
       radial-gradient(ellipse 40% 40% at 20% 80%, rgba(200,255,0,0.03) 0%, transparent 60%);
   }
   .hero-grid {
-    position: absolute;
-    inset: 0;
+    position: absolute; inset: 0;
     background-image:
       linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
       linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
@@ -81,102 +67,62 @@
   }
   .hero-content { position: relative; max-width: 900px; }
   .hero-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(200,255,0,0.1);
-    border: 1px solid rgba(200,255,0,0.3);
-    color: var(--accent);
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 2px;
-    padding: 6px 14px;
-    border-radius: 2px;
-    margin-bottom: 32px;
-    animation: fadeUp 0.6s ease both;
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(200,255,0,0.1); border: 1px solid rgba(200,255,0,0.3);
+    color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px;
+    letter-spacing: 2px; padding: 6px 14px; border-radius: 2px;
+    margin-bottom: 32px; animation: fadeUp 0.6s ease both;
   }
   .hero-tag::before {
-    content: '';
-    width: 6px; height: 6px;
-    background: var(--accent);
-    border-radius: 50%;
-    animation: pulse 2s infinite;
+    content: ''; width: 6px; height: 6px; background: var(--accent);
+    border-radius: 50%; animation: pulse 2s infinite;
   }
   @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
   .hero-name {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(72px, 12vw, 160px);
-    line-height: 0.9;
-    letter-spacing: -2px;
-    margin-bottom: 24px;
+    font-size: clamp(68px, 11vw, 150px);
+    line-height: 0.9; letter-spacing: -2px; margin-bottom: 16px;
     animation: fadeUp 0.6s 0.1s ease both;
   }
   .hero-name span { color: var(--accent); }
+  .hero-role {
+    font-family: 'DM Mono', monospace; font-size: clamp(12px, 1.5vw, 15px);
+    letter-spacing: 2px; color: var(--white); margin-bottom: 24px;
+    animation: fadeUp 0.6s 0.15s ease both;
+  }
+  .hero-role .sep { color: var(--accent); margin: 0 10px; }
   .hero-subtitle {
-    font-size: 18px;
-    color: var(--gray);
-    max-width: 540px;
-    line-height: 1.6;
-    margin-bottom: 32px;
+    font-size: 17px; color: var(--gray); max-width: 580px;
+    line-height: 1.7; margin-bottom: 32px;
     animation: fadeUp 0.6s 0.2s ease both;
   }
-  .hero-certs {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-    animation: fadeUp 0.6s 0.25s ease both;
-  }
+  .hero-certs { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 40px; animation: fadeUp 0.6s 0.25s ease both; }
   .cert-chip {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 1px;
-    padding: 7px 14px;
-    border: 1px solid rgba(200,255,0,0.35);
-    background: rgba(200,255,0,0.06);
-    color: var(--accent);
-    border-radius: 2px;
+    font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px;
+    padding: 7px 14px; border: 1px solid rgba(200,255,0,0.35);
+    background: rgba(200,255,0,0.06); color: var(--accent); border-radius: 2px;
   }
   .cert-chip.progress {
-    border-color: rgba(255,255,255,0.18);
-    background: rgba(255,255,255,0.03);
-    color: var(--gray);
+    border-color: rgba(255,255,255,0.18); background: rgba(255,255,255,0.03); color: var(--gray);
   }
   .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; animation: fadeUp 0.6s 0.3s ease both; }
   .btn-primary {
-    background: var(--accent);
-    color: var(--black);
-    padding: 14px 32px;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-    transition: opacity 0.2s, transform 0.2s;
+    background: var(--accent); color: var(--black); padding: 14px 32px;
+    font-size: 13px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase;
+    text-decoration: none; display: inline-block; transition: opacity 0.2s, transform 0.2s;
   }
   .btn-primary:hover { opacity: 0.85; transform: translateY(-1px); }
   .btn-outline {
-    background: transparent;
-    color: var(--white);
-    padding: 14px 32px;
-    font-size: 13px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    border: 1px solid rgba(255,255,255,0.2);
-    text-decoration: none;
-    display: inline-block;
-    transition: border-color 0.2s, transform 0.2s;
+    background: transparent; color: var(--white); padding: 14px 32px;
+    font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase;
+    border: 1px solid rgba(255,255,255,0.2); text-decoration: none;
+    display: inline-block; transition: border-color 0.2s, transform 0.2s;
   }
   .btn-outline:hover { border-color: var(--white); transform: translateY(-1px); }
 
   .hero-stats {
-    position: absolute;
-    right: 48px;
-    bottom: 80px;
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
+    position: absolute; right: 48px; bottom: 80px;
+    display: flex; flex-direction: column; gap: 28px;
     animation: fadeUp 0.6s 0.4s ease both;
   }
   .stat { text-align: right; border-right: 2px solid var(--accent); padding-right: 20px; }
@@ -187,69 +133,71 @@
 
   section { padding: 100px 48px; }
   .section-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 3px;
-    color: var(--accent);
-    text-transform: uppercase;
-    margin-bottom: 16px;
+    font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 3px;
+    color: var(--accent); text-transform: uppercase; margin-bottom: 16px;
   }
   .section-title {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(40px, 6vw, 80px);
-    line-height: 1;
-    margin-bottom: 56px;
+    font-family: 'Bebas Neue', sans-serif; font-size: clamp(40px, 6vw, 76px);
+    line-height: 1; margin-bottom: 48px;
   }
   .divider { width: 100%; height: 1px; background: rgba(255,255,255,0.06); }
 
-  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-  .about-text { font-size: 17px; line-height: 1.8; color: rgba(245,245,240,0.75); }
+  /* ABOUT */
+  .about-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 72px; align-items: start; }
+  .about-text { font-size: 16.5px; line-height: 1.85; color: rgba(245,245,240,0.78); }
   .about-text p + p { margin-top: 20px; }
   .about-traits { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
   .trait {
-    background: var(--mid);
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--gray);
-    transition: background 0.2s, color 0.2s;
+    background: var(--mid); padding: 20px; display: flex; align-items: center;
+    gap: 12px; font-size: 13px; letter-spacing: 1px; text-transform: uppercase;
+    color: var(--gray); transition: background 0.2s, color 0.2s;
   }
   .trait:hover { background: rgba(200,255,0,0.08); color: var(--white); }
   .trait-dot { width: 5px; height: 5px; background: var(--accent); border-radius: 50%; flex-shrink: 0; }
 
+  /* CERTS + LEARNING */
   .certs { background: var(--mid); }
-  .certs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2px; }
+  .certs-layout { display: grid; grid-template-columns: 1.6fr 1fr; gap: 48px; align-items: start; }
+  .certs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
   .cert-card {
-    background: rgba(255,255,255,0.03);
-    padding: 32px;
+    background: rgba(255,255,255,0.03); padding: 28px;
     border-left: 3px solid var(--accent);
   }
   .cert-card.pending { border-left-color: rgba(255,255,255,0.18); }
   .cert-status {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 12px;
+    font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 12px;
   }
   .cert-card.pending .cert-status { color: var(--gray); }
-  .cert-title { font-size: 17px; font-weight: 500; margin-bottom: 6px; line-height: 1.3; }
-  .cert-issuer { font-size: 12px; color: var(--gray); letter-spacing: 1px; margin-bottom: 12px; }
+  .cert-title { font-size: 16px; font-weight: 500; margin-bottom: 6px; line-height: 1.35; }
+  .cert-issuer { font-size: 12px; color: var(--gray); letter-spacing: 1px; margin-bottom: 10px; }
   .cert-date { font-family: 'DM Mono', monospace; font-size: 11px; color: rgba(245,245,240,0.5); }
-  .cert-note { font-size: 13px; color: rgba(245,245,240,0.6); line-height: 1.6; margin-top: 12px; }
+  .cert-note { font-size: 12.5px; color: rgba(245,245,240,0.55); line-height: 1.6; margin-top: 12px; }
 
+  .learning-panel {
+    background: rgba(255,255,255,0.03); padding: 32px;
+    border-top: 3px solid var(--accent);
+  }
+  .learning-title {
+    font-family: 'Bebas Neue', sans-serif; font-size: 24px;
+    letter-spacing: 2px; margin-bottom: 20px;
+  }
+  .learning-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+  .learning-list li {
+    font-size: 13.5px; line-height: 1.5; color: rgba(245,245,240,0.72);
+    display: flex; gap: 12px; align-items: flex-start;
+  }
+  .learning-mark {
+    font-family: 'DM Mono', monospace; font-size: 11px; color: var(--accent);
+    flex-shrink: 0; padding-top: 1px;
+  }
+  .learning-mark.dim { color: var(--gray); }
+
+  /* EXPERIENCE */
   .experience { background: var(--black); }
   .exp-item {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 48px;
-    padding: 48px 0;
-    border-top: 1px solid rgba(255,255,255,0.06);
+    display: grid; grid-template-columns: 220px 1fr; gap: 48px;
+    padding: 44px 0; border-top: 1px solid rgba(255,255,255,0.06);
   }
   .exp-date { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--gray); letter-spacing: 1px; margin-bottom: 8px; }
   .exp-company { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 1px; color: var(--accent); }
@@ -257,96 +205,107 @@
   .exp-title { font-size: 20px; font-weight: 500; margin-bottom: 16px; }
   .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 10px; }
   .exp-bullets li {
-    font-size: 14px;
-    line-height: 1.6;
-    color: rgba(245,245,240,0.7);
-    padding-left: 20px;
-    position: relative;
+    font-size: 14px; line-height: 1.65; color: rgba(245,245,240,0.7);
+    padding-left: 20px; position: relative;
   }
   .exp-bullets li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-size: 12px; }
 
+  /* PROJECTS */
   .projects { background: var(--mid); }
-  .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2px; }
+  .project-note {
+    font-size: 14px; color: var(--gray); line-height: 1.7;
+    max-width: 620px; margin-top: -28px; margin-bottom: 48px;
+  }
+  .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2px; }
   .project-card {
-    background: rgba(255,255,255,0.03);
-    padding: 40px;
-    position: relative;
-    overflow: hidden;
-    transition: background 0.3s;
+    background: rgba(255,255,255,0.03); padding: 36px;
+    position: relative; overflow: hidden; transition: background 0.3s;
+    display: flex; flex-direction: column;
   }
   .project-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 2px;
-    background: var(--accent);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s;
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform 0.3s;
   }
   .project-card:hover { background: rgba(255,255,255,0.05); }
   .project-card:hover::before { transform: scaleX(1); }
-  .project-num { font-family: 'Bebas Neue', sans-serif; font-size: 48px; color: rgba(255,255,255,0.06); line-height: 1; margin-bottom: 16px; }
-  .project-name { font-size: 18px; font-weight: 500; margin-bottom: 8px; line-height: 1.3; }
-  .project-period { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--accent); letter-spacing: 1px; margin-bottom: 16px; }
-  .project-desc { font-size: 13px; line-height: 1.7; color: rgba(245,245,240,0.6); margin-bottom: 20px; }
-  .project-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .project-num { font-family: 'Bebas Neue', sans-serif; font-size: 44px; color: rgba(255,255,255,0.06); line-height: 1; margin-bottom: 14px; }
+  .project-name { font-size: 18px; font-weight: 500; margin-bottom: 6px; line-height: 1.3; }
+  .project-kind {
+    font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1.5px;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 14px;
+  }
+  .project-desc { font-size: 13.5px; line-height: 1.7; color: rgba(245,245,240,0.62); margin-bottom: 18px; }
+  .feature-label {
+    font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 2px;
+    color: var(--gray); text-transform: uppercase; margin-bottom: 10px;
+  }
+  .project-features { list-style: none; display: flex; flex-direction: column; gap: 7px; margin-bottom: 20px; }
+  .project-features li {
+    font-size: 13px; line-height: 1.5; color: rgba(245,245,240,0.6);
+    padding-left: 16px; position: relative;
+  }
+  .project-features li::before {
+    content: ''; position: absolute; left: 0; top: 8px;
+    width: 4px; height: 4px; background: var(--accent); border-radius: 50%;
+  }
+
+  /* FLOW DIAGRAM */
+  .flow {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+    padding: 18px; background: rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.07); margin-bottom: 20px;
+  }
+  .flow-node {
+    font-family: 'DM Mono', monospace; font-size: 9.5px; letter-spacing: 0.5px;
+    padding: 6px 9px; background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1); color: rgba(245,245,240,0.75);
+    white-space: nowrap; border-radius: 2px;
+  }
+  .flow-node.ai { border-color: rgba(200,255,0,0.4); color: var(--accent); background: rgba(200,255,0,0.06); }
+  .flow-arrow { color: var(--accent); font-size: 11px; opacity: 0.6; }
+  .flow-branch {
+    display: flex; flex-direction: column; gap: 4px;
+    padding-left: 4px; border-left: 1px solid rgba(200,255,0,0.25);
+  }
+
+  .project-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
   .tag {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    letter-spacing: 1px;
-    padding: 4px 10px;
-    background: rgba(200,255,0,0.08);
-    border: 1px solid rgba(200,255,0,0.2);
-    color: var(--accent);
-    border-radius: 2px;
+    font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px;
+    padding: 4px 10px; background: rgba(200,255,0,0.08);
+    border: 1px solid rgba(200,255,0,0.2); color: var(--accent); border-radius: 2px;
   }
   .project-link {
-    display: inline-block;
-    margin-top: 16px;
-    font-size: 11px;
-    letter-spacing: 2px;
-    color: var(--gray);
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: color 0.2s;
-    word-break: break-all;
+    display: inline-block; margin-top: 16px; font-size: 11px; letter-spacing: 2px;
+    color: var(--gray); text-decoration: none; text-transform: uppercase;
+    transition: color 0.2s; word-break: break-all;
   }
   .project-link:hover { color: var(--accent); }
 
+  /* SKILLS */
   .skills { background: var(--black); }
   .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
   .skill-group-title {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 3px;
-    color: var(--accent);
-    text-transform: uppercase;
-    margin-bottom: 24px;
+    font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 3px;
+    color: var(--accent); text-transform: uppercase; margin-bottom: 20px;
   }
-  .skill-list { display: flex; flex-direction: column; gap: 2px; }
-  .skill-item {
-    background: var(--mid);
-    padding: 14px 20px;
-    font-size: 14px;
-    color: rgba(245,245,240,0.75);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-    border-left: 2px solid transparent;
-    transition: border-color 0.2s, background 0.2s;
+  .skill-sub {
+    font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 2px;
+    color: var(--gray); text-transform: uppercase; margin: 20px 0 10px;
   }
-  .skill-item:hover { border-color: var(--accent); background: rgba(200,255,0,0.04); }
-  .skill-tag { color: var(--accent); font-size: 11px; font-family: 'DM Mono', monospace; white-space: nowrap; }
+  .skill-sub:first-of-type { margin-top: 0; }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .skill-pill {
+    font-size: 13px; padding: 8px 14px; background: var(--mid);
+    color: rgba(245,245,240,0.75); border: 1px solid rgba(255,255,255,0.06);
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .skill-pill:hover { border-color: rgba(200,255,0,0.4); color: var(--white); }
 
+  /* CONTENT */
   .content { background: var(--mid); }
   .content-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2px; }
   .platform-card {
-    background: rgba(255,255,255,0.03);
-    padding: 32px;
-    text-align: center;
-    transition: background 0.2s;
+    background: rgba(255,255,255,0.03); padding: 32px; text-align: center; transition: background 0.2s;
   }
   .platform-card:hover { background: rgba(200,255,0,0.06); }
   .platform-icon { font-size: 26px; margin-bottom: 12px; }
@@ -354,45 +313,36 @@
   .platform-desc { font-size: 12px; color: var(--gray); line-height: 1.5; margin-bottom: 16px; }
   .platform-link { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px; color: var(--accent); text-decoration: none; word-break: break-all; }
 
+  /* CONTACT */
   .contact { background: var(--accent); color: var(--black); padding: 100px 48px; text-align: center; }
   .contact .section-label { color: rgba(0,0,0,0.5); }
-  .contact .section-title { color: var(--black); margin-bottom: 24px; }
-  .contact-sub { font-size: 16px; color: rgba(0,0,0,0.6); margin-bottom: 48px; }
+  .contact .section-title { color: var(--black); margin-bottom: 20px; }
+  .contact-sub { font-size: 16px; color: rgba(0,0,0,0.62); margin-bottom: 44px; max-width: 520px; margin-left: auto; margin-right: auto; line-height: 1.6; }
   .contact-email {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(24px, 4vw, 48px);
-    color: var(--black);
-    text-decoration: none;
-    display: block;
-    margin-bottom: 48px;
-    letter-spacing: 2px;
-    transition: opacity 0.2s;
+    font-family: 'Bebas Neue', sans-serif; font-size: clamp(24px, 4vw, 48px);
+    color: var(--black); text-decoration: none; display: block;
+    margin-bottom: 44px; letter-spacing: 2px; transition: opacity 0.2s;
   }
   .contact-email:hover { opacity: 0.6; }
   .social-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
   .social-link {
-    background: rgba(0,0,0,0.1);
-    color: var(--black);
-    text-decoration: none;
-    padding: 10px 24px;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: background 0.2s;
+    background: rgba(0,0,0,0.1); color: var(--black); text-decoration: none;
+    padding: 10px 24px; font-size: 12px; letter-spacing: 2px;
+    text-transform: uppercase; font-weight: 500; transition: background 0.2s;
   }
   .social-link:hover { background: rgba(0,0,0,0.2); }
 
   footer {
-    background: var(--black);
-    padding: 24px 48px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: var(--black); padding: 24px 48px;
+    display: flex; justify-content: space-between; align-items: center;
     border-top: 1px solid rgba(255,255,255,0.06);
   }
   footer span { font-size: 11px; color: var(--gray); letter-spacing: 1px; }
 
+  @media (max-width: 900px) {
+    .certs-layout { grid-template-columns: 1fr; gap: 32px; }
+    .certs-grid { grid-template-columns: 1fr; }
+  }
   @media (max-width: 768px) {
     nav { padding: 16px 24px; }
     .nav-links { display: none; }
@@ -400,6 +350,7 @@
     .hero { padding: 100px 24px 72px; }
     .hero-stats { display: none; }
     .about-grid, .skills-grid, .exp-item { grid-template-columns: 1fr; gap: 32px; }
+    .project-note { margin-top: -20px; }
     footer { flex-direction: column; gap: 8px; text-align: center; }
   }
 </style>
@@ -418,19 +369,24 @@
   </ul>
 </nav>
 
+<!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
   <div class="hero-content">
-    <div class="hero-tag">AI-Native IT Professional · Open to Work</div>
+    <div class="hero-tag">Open to IT Support &amp; Help Desk Roles</div>
     <h1 class="hero-name">MAX<br><span>MAGULICK</span></h1>
+    <div class="hero-role">
+      IT SUPPORT<span class="sep">•</span>MSP EXPERIENCE<span class="sep">•</span>AUTOMATION BUILDER
+    </div>
     <p class="hero-subtitle">
-      Certified IT professional building at the intersection of AI, automation, and real infrastructure.
-      Self-taught. Credentialed. Shipping live systems.
+      Early-career IT professional with MSP experience and Microsoft 365 knowledge.
+      I build AI and automation projects outside of work to strengthen my technical
+      skills and solve real-world problems.
     </p>
     <div class="hero-certs">
-      <span class="cert-chip">✓ CompTIA A+ Core 1</span>
-      <span class="cert-chip progress">◷ CompTIA A+ Core 2 — In Progress</span>
+      <span class="cert-chip">✓ CompTIA A+ Core 1 Passed</span>
+      <span class="cert-chip progress">CompTIA A+ Core 2 — In Progress</span>
       <span class="cert-chip">✓ Microsoft MS-900</span>
     </div>
     <div class="hero-ctas">
@@ -441,11 +397,11 @@
   <div class="hero-stats">
     <div class="stat">
       <div class="stat-num">70+</div>
-      <div class="stat-label">MSP Clients Managed</div>
+      <div class="stat-label">Client Accounts Supported</div>
     </div>
     <div class="stat">
-      <div class="stat-num">3</div>
-      <div class="stat-label">AI Apps Deployed</div>
+      <div class="stat-num">4</div>
+      <div class="stat-label">Portfolio Projects</div>
     </div>
     <div class="stat">
       <div class="stat-num">2</div>
@@ -456,88 +412,125 @@
 
 <div class="divider"></div>
 
+<!-- ABOUT -->
 <section class="about" id="about">
   <div class="section-label">// 01 — About</div>
-  <h2 class="section-title">WHO I AM</h2>
+  <h2 class="section-title">ABOUT ME</h2>
   <div class="about-grid">
     <div class="about-text">
       <p>
-        I'm a self-taught AI and IT professional based in the Pittsburgh area. While most people my age were
-        in classrooms, I was managing 70+ client accounts at a managed service provider, building
-        live AI applications, and earning industry certifications on my own time.
+        I spent a year and a half as an Account Manager at IntermixIT, a managed service
+        provider, where I coordinated support for roughly 70 client accounts. My day-to-day
+        was client communication, service request tracking in Autotask, documentation, and
+        working alongside the engineers who handled escalations.
       </p>
       <p>
-        I believe one person with the right tools and systems can do the work of an entire team.
-        That's not a slogan — it's something I prove every day. From deploying Azure-powered
-        applications to building multi-step automation systems, I move fast and build things that work.
+        That role taught me how IT service delivery actually works — how tickets move, how
+        clients describe problems versus what's really happening, and how much of good support
+        is organization and follow-through. I also worked in Microsoft 365 every day, which is
+        what pushed me to get MS-900 certified.
       </p>
       <p>
-        I'm currently completing my CompTIA A+ certification and targeting IT support, systems, and
-        AI-adjacent roles at tech companies, MSPs, and AI-forward organizations where I can contribute
-        immediately and grow fast.
+        Outside of work I build automation projects with Zapier, n8n, Python, Azure AI, and
+        Streamlit. These are learning projects, not enterprise software — I build them because
+        I like understanding how systems connect, and each one has taught me something I
+        couldn't get from a course alone.
+      </p>
+      <p>
+        I passed CompTIA A+ Core 1 in July 2026 and I'm currently studying for Core 2. I'm
+        looking for a help desk, desktop support, or IT support role where I can build real
+        technical depth.
       </p>
     </div>
     <div class="about-traits">
-      <div class="trait"><span class="trait-dot"></span>Ambitious</div>
-      <div class="trait"><span class="trait-dot"></span>Disciplined</div>
+      <div class="trait"><span class="trait-dot"></span>Organized</div>
+      <div class="trait"><span class="trait-dot"></span>Curious</div>
       <div class="trait"><span class="trait-dot"></span>Builder</div>
       <div class="trait"><span class="trait-dot"></span>Adaptable</div>
-      <div class="trait"><span class="trait-dot"></span>Technical</div>
-      <div class="trait"><span class="trait-dot"></span>Strategic</div>
-      <div class="trait"><span class="trait-dot"></span>AI-Native</div>
-      <div class="trait"><span class="trait-dot"></span>Self-Starter</div>
+      <div class="trait"><span class="trait-dot"></span>Fast Learner</div>
+      <div class="trait"><span class="trait-dot"></span>Collaborative</div>
+      <div class="trait"><span class="trait-dot"></span>Detail-Oriented</div>
+      <div class="trait"><span class="trait-dot"></span>Self-Directed</div>
     </div>
   </div>
 </section>
 
 <div class="divider"></div>
 
+<!-- CERTIFICATIONS + LEARNING -->
 <section class="certs" id="certs">
   <div class="section-label">// 02 — Certifications</div>
-  <h2 class="section-title">CREDENTIALS</h2>
-  <div class="certs-grid">
+  <h2 class="section-title">CERTIFICATIONS &amp; LEARNING</h2>
 
-    <div class="cert-card">
-      <div class="cert-status">● Passed</div>
-      <div class="cert-title">CompTIA A+ Core 1 (220-1101)</div>
-      <div class="cert-issuer">CompTIA</div>
-      <div class="cert-date">July 24, 2026</div>
-      <p class="cert-note">
-        Hardware, networking, mobile devices, virtualization, cloud computing,
-        and hardware/network troubleshooting.
-      </p>
+  <div class="certs-layout">
+    <div class="certs-grid">
+
+      <div class="cert-card">
+        <div class="cert-status">● Passed</div>
+        <div class="cert-title">CompTIA A+ Core 1 (220-1101)</div>
+        <div class="cert-issuer">CompTIA</div>
+        <div class="cert-date">July 24, 2026</div>
+        <p class="cert-note">
+          Hardware, networking fundamentals, mobile devices, virtualization,
+          cloud concepts, and hardware/network troubleshooting.
+        </p>
+      </div>
+
+      <div class="cert-card pending">
+        <div class="cert-status">◷ In Progress</div>
+        <div class="cert-title">CompTIA A+ Core 2 (220-1102)</div>
+        <div class="cert-issuer">CompTIA</div>
+        <div class="cert-date">Currently Studying</div>
+        <p class="cert-note">
+          Operating systems, security, software troubleshooting, and operational
+          procedures. Completes the full A+ certification.
+        </p>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-status">● Certified</div>
+        <div class="cert-title">Microsoft MS-900</div>
+        <div class="cert-issuer">Microsoft 365 Fundamentals</div>
+        <div class="cert-date">Certified</div>
+        <p class="cert-note">
+          Cloud concepts, Microsoft 365 services, security and compliance,
+          and Microsoft 365 pricing and support models.
+        </p>
+      </div>
+
+      <div class="cert-card pending">
+        <div class="cert-status">◷ Next Up</div>
+        <div class="cert-title">Continuing Education</div>
+        <div class="cert-issuer">Self-Directed</div>
+        <div class="cert-date">Ongoing</div>
+        <p class="cert-note">
+          Working toward deeper Windows administration, identity management,
+          and endpoint fundamentals after A+ Core 2.
+        </p>
+      </div>
+
     </div>
 
-    <div class="cert-card pending">
-      <div class="cert-status">◷ In Progress</div>
-      <div class="cert-title">CompTIA A+ Core 2 (220-1102)</div>
-      <div class="cert-issuer">CompTIA</div>
-      <div class="cert-date">Currently Studying</div>
-      <p class="cert-note">
-        Operating systems, security, software troubleshooting, and operational
-        procedures. Completes full A+ certification.
-      </p>
+    <div class="learning-panel">
+      <div class="learning-title">WHAT I'M LEARNING</div>
+      <ul class="learning-list">
+        <li><span class="learning-mark">✓</span> Microsoft 365 Fundamentals (MS-900) — certified</li>
+        <li><span class="learning-mark">✓</span> CompTIA A+ Core 1 — passed July 2026</li>
+        <li><span class="learning-mark dim">◷</span> Studying CompTIA A+ Core 2</li>
+        <li><span class="learning-mark dim">◷</span> Building automation projects with n8n and Zapier</li>
+        <li><span class="learning-mark dim">◷</span> Learning Microsoft Intune and Active Directory</li>
+        <li><span class="learning-mark dim">◷</span> Practicing Python and REST API fundamentals</li>
+      </ul>
     </div>
-
-    <div class="cert-card">
-      <div class="cert-status">● Certified</div>
-      <div class="cert-title">Microsoft MS-900</div>
-      <div class="cert-issuer">Microsoft 365 Fundamentals</div>
-      <div class="cert-date">Certified</div>
-      <p class="cert-note">
-        Cloud concepts, Microsoft 365 services, security and compliance,
-        and Microsoft 365 pricing and support models.
-      </p>
-    </div>
-
   </div>
 </section>
 
 <div class="divider"></div>
 
+<!-- EXPERIENCE -->
 <section class="experience" id="experience">
   <div class="section-label">// 03 — Experience</div>
-  <h2 class="section-title">WHERE I'VE WORKED</h2>
+  <h2 class="section-title">EXPERIENCE</h2>
 
   <div class="exp-item">
     <div class="exp-meta">
@@ -546,16 +539,14 @@
       <div class="exp-type">Full-time · Remote · 1 yr 7 mos</div>
     </div>
     <div class="exp-content">
-      <div class="exp-title">MSP Account Manager / IT Support</div>
+      <div class="exp-title">Account Manager / IT Support</div>
       <ul class="exp-bullets">
-        <li>Supported ~70 client accounts in a managed service provider environment, handling ~50 service tickets per month</li>
-        <li>Served as the primary liaison between clients and technical teams, ensuring timely issue resolution</li>
-        <li>Created, tracked, and prioritized service tickets using Autotask PSA</li>
-        <li>Led and improved Quarterly Business Reviews (QBRs), increasing presentation quality and delivery efficiency</li>
-        <li>Maintained accurate client data across CRM and internal platforms</li>
-        <li>Collaborated with engineers on project planning, procurement, and service delivery</li>
-        <li>Built Power Automate workflows to improve internal processes and reduce manual tasks</li>
-        <li>Assisted team members with internal technical issues and onboarding</li>
+        <li>Managed communication for approximately 70 client accounts in an MSP environment</li>
+        <li>Coordinated approximately 50 monthly service requests using Autotask PSA</li>
+        <li>Served as the liaison between clients and technical engineers, tracking requests through the full ticket lifecycle</li>
+        <li>Assisted with client onboarding, procurement, scheduling, and Quarterly Business Reviews</li>
+        <li>Maintained client records across Microsoft 365 and CRM platforms</li>
+        <li>Documented service history and account details to support engineering handoffs</li>
       </ul>
     </div>
   </div>
@@ -579,62 +570,167 @@
 
 <div class="divider"></div>
 
+<!-- PROJECTS -->
 <section class="projects" id="projects">
   <div class="section-label">// 04 — Projects</div>
-  <h2 class="section-title">WHAT I'VE BUILT</h2>
+  <h2 class="section-title">PROJECTS</h2>
+  <p class="project-note">
+    These are personal projects I built on my own time to learn practical automation and
+    cloud skills. They aren't production systems — they're how I teach myself by building
+    something end to end rather than following along with a tutorial.
+  </p>
 
   <div class="projects-grid">
 
+    <!-- 01 -->
     <div class="project-card">
       <div class="project-num">01</div>
       <div class="project-name">AI Customer Support Automation System</div>
-      <div class="project-period">MAY 2026</div>
+      <div class="project-kind">Personal Portfolio Project</div>
       <p class="project-desc">
-        Built a multi-path Zapier automation system powered by ChatGPT (OpenAI) that classifies incoming
-        support requests, routes them to the correct path (urgent, billing, technical, general), generates
-        context-aware email responses, and logs records to Airtable — all without human intervention.
+        Designed and built an AI-powered customer support workflow using Zapier, OpenAI,
+        Airtable, Gmail, Slack, and Google Forms.
       </p>
+
+      <div class="flow">
+        <span class="flow-node">Google Form</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-node ai">OpenAI Classify</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-node">Router</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-branch">
+          <span class="flow-node">Urgent</span>
+          <span class="flow-node">Billing</span>
+          <span class="flow-node">Technical</span>
+          <span class="flow-node">General</span>
+        </span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-node ai">OpenAI Draft</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-node">Gmail</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-node">Airtable</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-node">Slack</span>
+      </div>
+
+      <div class="feature-label">What it does</div>
+      <ul class="project-features">
+        <li>Classifies support requests using OpenAI</li>
+        <li>Routes requests to different workflows</li>
+        <li>Generates AI-assisted email responses</li>
+        <li>Stores requests in Airtable</li>
+        <li>Sends Slack notifications for urgent issues</li>
+        <li>Automates customer follow-up emails</li>
+      </ul>
+
       <div class="project-tags">
         <span class="tag">Zapier</span>
-        <span class="tag">ChatGPT</span>
-        <span class="tag">Airtable</span>
-        <span class="tag">Gmail</span>
-        <span class="tag">Slack</span>
+        <span class="tag">OpenAI</span>
         <span class="tag">Google Forms</span>
+        <span class="tag">Airtable</span>
+        <span class="tag">Slack</span>
+        <span class="tag">Gmail</span>
       </div>
     </div>
 
+    <!-- 02 -->
     <div class="project-card">
       <div class="project-num">02</div>
-      <div class="project-name">AI Image Generator</div>
-      <div class="project-period">APR 2026 — MAY 2026</div>
+      <div class="project-name">AI Content Repurposing Workflow</div>
+      <div class="project-kind">Personal Portfolio Project</div>
       <p class="project-desc">
-        Built and deployed a web-based AI application using Azure OpenAI and Microsoft Foundry that
-        generates high-quality images from text prompts. Implemented prompt enhancement, customizable
-        styles, and real-time generation. Integrated secure API handling and deployed for live usage.
+        Designed and built an automated content pipeline that transforms YouTube videos
+        into social media posts using OpenAI and n8n.
       </p>
+
+      <div class="flow">
+        <span class="flow-node">YouTube Transcript</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-node ai">OpenAI Generate</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-node">Notion Draft</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-node">Human Approval</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-branch">
+          <span class="flow-node">LinkedIn</span>
+          <span class="flow-node">X</span>
+        </span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-node">Status Update</span>
+      </div>
+
+      <div class="feature-label">What it does</div>
+      <ul class="project-features">
+        <li>Retrieves YouTube transcripts</li>
+        <li>Uses OpenAI to generate content</li>
+        <li>Stores drafts in Notion</li>
+        <li>Human approval workflow before publishing</li>
+        <li>Automatically publishes to LinkedIn and X</li>
+        <li>Updates publishing status automatically</li>
+      </ul>
+
+      <div class="project-tags">
+        <span class="tag">n8n</span>
+        <span class="tag">OpenAI</span>
+        <span class="tag">Notion</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">HTTP APIs</span>
+      </div>
+    </div>
+
+    <!-- 03 -->
+    <div class="project-card">
+      <div class="project-num">03</div>
+      <div class="project-name">AI Image Generator</div>
+      <div class="project-kind">Personal Learning Project</div>
+      <p class="project-desc">
+        Built while learning Azure AI and Streamlit. The goal was to get hands-on with
+        Azure OpenAI and understand how to take a small app from local development to a
+        deployed, working URL.
+      </p>
+
+      <div class="feature-label">What I learned</div>
+      <ul class="project-features">
+        <li>Working with Azure OpenAI endpoints</li>
+        <li>API authentication and key handling</li>
+        <li>Managing secrets with environment variables</li>
+        <li>Deploying a Streamlit app to the cloud</li>
+      </ul>
+
       <div class="project-tags">
         <span class="tag">Python</span>
         <span class="tag">Azure OpenAI</span>
-        <span class="tag">Microsoft Foundry</span>
         <span class="tag">Streamlit</span>
       </div>
       <a class="project-link" href="https://ai-image-app-sl8hgxdvneslevt4usqhbt.streamlit.app/" target="_blank">↗ Live Demo</a>
     </div>
 
+    <!-- 04 -->
     <div class="project-card">
-      <div class="project-num">03</div>
+      <div class="project-num">04</div>
       <div class="project-name">AI Text Analysis App</div>
-      <div class="project-period">MAR 2026 — APR 2026</div>
+      <div class="project-kind">Personal Learning Project</div>
       <p class="project-desc">
-        Built and deployed an AI-powered text analysis application using Azure AI Language and Streamlit.
-        Detects language, extracts named entities, identifies PII (emails, phone numbers), and generates
-        redacted output. Designed for document processing, compliance scanning, and automation workflows.
+        Built while learning Azure AI Language Services. I wanted to see what the
+        prebuilt language APIs could do and how their outputs could be combined into
+        something useful.
       </p>
+
+      <div class="feature-label">What I learned</div>
+      <ul class="project-features">
+        <li>Language detection</li>
+        <li>Named entity recognition (NER)</li>
+        <li>PII detection and redaction</li>
+        <li>Sentiment analysis</li>
+        <li>Deploying to Streamlit Cloud</li>
+      </ul>
+
       <div class="project-tags">
         <span class="tag">Python</span>
-        <span class="tag">Azure AI</span>
-        <span class="tag">NLP</span>
+        <span class="tag">Azure AI Language</span>
         <span class="tag">Streamlit</span>
       </div>
       <a class="project-link" href="https://ai-text-analysis-app-o6szo8hc52a35muuqrsd9v.streamlit.app/" target="_blank">↗ Live Demo</a>
@@ -645,37 +741,53 @@
 
 <div class="divider"></div>
 
+<!-- SKILLS -->
 <section class="skills" id="skills">
   <div class="section-label">// 05 — Skills</div>
-  <h2 class="section-title">WHAT I BRING</h2>
+  <h2 class="section-title">SKILLS</h2>
 
   <div class="skills-grid">
     <div>
-      <div class="skill-group-title">Technical Skills</div>
-      <div class="skill-list">
-        <div class="skill-item">Hardware &amp; Networking <span class="skill-tag">A+ Core 1</span></div>
-        <div class="skill-item">Troubleshooting &amp; Support <span class="skill-tag">MSP Experience</span></div>
-        <div class="skill-item">Python <span class="skill-tag">Development</span></div>
-        <div class="skill-item">Azure OpenAI / Azure AI <span class="skill-tag">Cloud AI</span></div>
-        <div class="skill-item">Zapier / Power Automate <span class="skill-tag">Automation</span></div>
-        <div class="skill-item">Streamlit <span class="skill-tag">Deployment</span></div>
-        <div class="skill-item">ChatGPT / OpenAI API <span class="skill-tag">AI Workflows</span></div>
-        <div class="skill-item">Microsoft 365 <span class="skill-tag">MS-900</span></div>
-        <div class="skill-item">Autotask PSA <span class="skill-tag">Ticketing</span></div>
-        <div class="skill-item">Airtable / Notion / CRM <span class="skill-tag">Operations</span></div>
+      <div class="skill-group-title">Technical</div>
+
+      <div class="skill-sub">IT &amp; Support</div>
+      <div class="skill-tags">
+        <span class="skill-pill">Microsoft 365</span>
+        <span class="skill-pill">Autotask PSA</span>
+        <span class="skill-pill">Windows</span>
+        <span class="skill-pill">Hardware Troubleshooting</span>
+        <span class="skill-pill">Networking Fundamentals</span>
+        <span class="skill-pill">CompTIA A+</span>
+      </div>
+
+      <div class="skill-sub">Automation &amp; Development</div>
+      <div class="skill-tags">
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">JavaScript</span>
+        <span class="skill-pill">REST APIs</span>
+        <span class="skill-pill">Git</span>
+        <span class="skill-pill">Zapier</span>
+        <span class="skill-pill">n8n</span>
+        <span class="skill-pill">Azure AI</span>
+        <span class="skill-pill">OpenAI APIs</span>
+        <span class="skill-pill">Streamlit</span>
+        <span class="skill-pill">Notion</span>
+        <span class="skill-pill">Airtable</span>
       </div>
     </div>
+
     <div>
       <div class="skill-group-title">Soft Skills</div>
-      <div class="skill-list">
-        <div class="skill-item">Client Communication <span class="skill-tag">70+ Accounts</span></div>
-        <div class="skill-item">Problem Solving <span class="skill-tag">Systems Thinking</span></div>
-        <div class="skill-item">Adaptability <span class="skill-tag">Fast Learner</span></div>
-        <div class="skill-item">Organization <span class="skill-tag">Detail-Oriented</span></div>
-        <div class="skill-item">Determination <span class="skill-tag">Self-Directed</span></div>
-        <div class="skill-item">Entrepreneurial Mindset <span class="skill-tag">Builder</span></div>
-        <div class="skill-item">Content Strategy <span class="skill-tag">Multi-Platform</span></div>
-        <div class="skill-item">Documentation <span class="skill-tag">Process Clarity</span></div>
+      <div class="skill-tags">
+        <span class="skill-pill">Client Communication</span>
+        <span class="skill-pill">Documentation</span>
+        <span class="skill-pill">Problem Solving</span>
+        <span class="skill-pill">Organization</span>
+        <span class="skill-pill">Adaptability</span>
+        <span class="skill-pill">Fast Learner</span>
+        <span class="skill-pill">Collaboration</span>
+        <span class="skill-pill">Time Management</span>
+        <span class="skill-pill">Attention to Detail</span>
       </div>
     </div>
   </div>
@@ -683,36 +795,37 @@
 
 <div class="divider"></div>
 
+<!-- CONTENT -->
 <section class="content" id="content">
-  <div class="section-label">// 06 — Content &amp; Brand</div>
-  <h2 class="section-title">MY ONLINE PRESENCE</h2>
-  <p style="color:var(--gray);font-size:15px;margin-bottom:48px;max-width:560px;line-height:1.7;">
-    I create practical AI productivity content across multiple platforms —
-    teaching real tools, real automations, and real results to a growing audience.
+  <div class="section-label">// 06 — Content</div>
+  <h2 class="section-title">LEARNING IN PUBLIC</h2>
+  <p style="color:var(--gray);font-size:15px;margin-bottom:44px;max-width:580px;line-height:1.7;">
+    I document what I'm learning about AI tools and automation as I go. It keeps me
+    accountable and forces me to actually understand what I build well enough to explain it.
   </p>
   <div class="content-grid">
     <div class="platform-card">
       <div class="platform-icon">▶</div>
       <div class="platform-name">YouTube</div>
-      <p class="platform-desc">Long &amp; short-form AI productivity and automation tutorials</p>
+      <p class="platform-desc">Long &amp; short-form walkthroughs of automations I've built</p>
       <a class="platform-link" href="https://youtube.com/@magoogpt" target="_blank">@magoogpt</a>
     </div>
     <div class="platform-card">
       <div class="platform-icon">♪</div>
       <div class="platform-name">TikTok</div>
-      <p class="platform-desc">Quick AI tips, tools, and workflow breakdowns</p>
+      <p class="platform-desc">Short breakdowns of AI tools and workflows</p>
       <a class="platform-link" href="https://www.tiktok.com/@magoogpt" target="_blank">@magoogpt</a>
     </div>
     <div class="platform-card">
       <div class="platform-icon">in</div>
       <div class="platform-name">LinkedIn</div>
-      <p class="platform-desc">Professional insights, project updates, and AI content</p>
+      <p class="platform-desc">Project updates and notes on what I'm studying</p>
       <a class="platform-link" href="https://www.linkedin.com/in/max-magulick" target="_blank">max-magulick</a>
     </div>
     <div class="platform-card">
       <div class="platform-icon">◎</div>
       <div class="platform-name">Instagram</div>
-      <p class="platform-desc">Visual AI content and behind-the-scenes builds</p>
+      <p class="platform-desc">Behind-the-scenes of projects in progress</p>
       <a class="platform-link" href="https://www.instagram.com/magoogpt" target="_blank">@magoogpt</a>
     </div>
   </div>
@@ -720,10 +833,14 @@
 
 <div class="divider"></div>
 
+<!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="section-label">// 07 — Contact</div>
-  <h2 class="section-title">LET'S CONNECT</h2>
-  <p class="contact-sub">Open to full-time IT, support, and AI-adjacent roles. Let's talk.</p>
+  <h2 class="section-title">GET IN TOUCH</h2>
+  <p class="contact-sub">
+    Looking for a help desk, desktop support, or IT support role in the Pittsburgh area
+    or remote. Happy to talk about any of the projects above.
+  </p>
   <a href="mailto:maxmagulick@gmail.com" class="contact-email">MAXMAGULICK@GMAIL.COM</a>
   <div class="social-links">
     <a href="https://www.linkedin.com/in/max-magulick" class="social-link" target="_blank">LinkedIn</a>
