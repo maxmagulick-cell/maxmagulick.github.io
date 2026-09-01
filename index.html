@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Max Magulick — IT Support Professional</title>
+<title>Max Magulick — IT Support &amp; Automation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -216,7 +216,7 @@
     font-size: 14px; color: var(--gray); line-height: 1.7;
     max-width: 620px; margin-top: -28px; margin-bottom: 48px;
   }
-  .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2px; }
+  .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
   .project-card {
     background: rgba(255,255,255,0.03); padding: 36px;
     position: relative; overflow: hidden; transition: background 0.3s;
@@ -268,6 +268,22 @@
     padding-left: 4px; border-left: 1px solid rgba(200,255,0,0.25);
   }
 
+  .badge-retired {
+    display: inline-block; font-family: 'DM Mono', monospace; font-size: 9.5px;
+    letter-spacing: 1.5px; text-transform: uppercase; padding: 3px 8px;
+    border: 1px solid rgba(255,255,255,0.18); color: var(--gray);
+    background: rgba(255,255,255,0.03); border-radius: 2px; margin-bottom: 12px;
+    align-self: flex-start;
+  }
+  .badge-live {
+    display: inline-block; font-family: 'DM Mono', monospace; font-size: 9.5px;
+    letter-spacing: 1.5px; text-transform: uppercase; padding: 3px 8px;
+    border: 1px solid rgba(200,255,0,0.4); color: var(--accent);
+    background: rgba(200,255,0,0.07); border-radius: 2px; margin-bottom: 12px;
+    align-self: flex-start;
+  }
+  .project-card.dim { opacity: 0.72; }
+  .project-card.dim:hover { opacity: 1; }
   .project-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
   .tag {
     font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px;
@@ -339,9 +355,15 @@
   }
   footer span { font-size: 11px; color: var(--gray); letter-spacing: 1px; }
 
+  @media (max-width: 1180px) {
+    .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  }
   @media (max-width: 900px) {
     .certs-layout { grid-template-columns: 1fr; gap: 32px; }
     .certs-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 760px) {
+    .projects-grid { grid-template-columns: 1fr; }
   }
   @media (max-width: 768px) {
     nav { padding: 16px 24px; }
@@ -365,6 +387,7 @@
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
+    <li><a href="#content">Content</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -377,12 +400,12 @@
     <div class="hero-tag">Open to IT Support &amp; Help Desk Roles</div>
     <h1 class="hero-name">MAX<br><span>MAGULICK</span></h1>
     <div class="hero-role">
-      IT SUPPORT<span class="sep">•</span>MSP EXPERIENCE<span class="sep">•</span>AUTOMATION BUILDER
+      HELP DESK<span class="sep">•</span>MSP EXPERIENCE<span class="sep">•</span>AUTOMATION BUILDER
     </div>
     <p class="hero-subtitle">
-      Early-career IT professional with MSP experience and Microsoft 365 knowledge.
-      I build AI and automation projects outside of work to strengthen my technical
-      skills and solve real-world problems.
+      Two years of IT support across an enterprise health system and a managed service
+      provider. I run Tier 1 triage by day, build automations that remove manual steps
+      from support work, and document the whole climb in public.
     </p>
     <div class="hero-certs">
       <span class="cert-chip">✓ CompTIA A+ Core 1 Passed</span>
@@ -396,16 +419,16 @@
   </div>
   <div class="hero-stats">
     <div class="stat">
+      <div class="stat-num">2 YRS</div>
+      <div class="stat-label">IT Support Experience</div>
+    </div>
+    <div class="stat">
       <div class="stat-num">70+</div>
       <div class="stat-label">Client Accounts Supported</div>
     </div>
     <div class="stat">
-      <div class="stat-num">4</div>
-      <div class="stat-label">Portfolio Projects</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">2</div>
-      <div class="stat-label">Certifications Earned</div>
+      <div class="stat-num">~50</div>
+      <div class="stat-label">Tickets Per Month</div>
     </div>
   </div>
 </section>
@@ -419,27 +442,29 @@
   <div class="about-grid">
     <div class="about-text">
       <p>
-        I spent a year and a half as an Account Manager at IntermixIT, a managed service
-        provider, where I coordinated support for roughly 70 client accounts. My day-to-day
-        was client communication, service request tracking in Autotask, documentation, and
-        working alongside the engineers who handled escalations.
+        I'm currently a Help Desk Analyst on contract with UPMC, providing Tier 1 support
+        through an enterprise Epic EHR go-live. That means high call volume from clinical and
+        administrative staff, fast triage of access and application issues, and escalations
+        that have to be documented well enough for the next team to act on without a second call.
       </p>
       <p>
-        That role taught me how IT service delivery actually works — how tickets move, how
-        clients describe problems versus what's really happening, and how much of good support
-        is organization and follow-through. I also worked in Microsoft 365 every day, which is
-        what pushed me to get MS-900 certified.
+        Before that I spent a year and a half at IntermixIT, a managed service provider, as the
+        primary point of contact for roughly 70 client accounts and about 50 tickets a month.
+        I owned the ticket lifecycle in Autotask PSA, worked alongside the engineers who handled
+        escalations, and lived in Microsoft 365 every day — which is what pushed me to get MS-900.
       </p>
       <p>
-        Outside of work I build automation projects with Zapier, n8n, Python, Azure AI, and
-        Streamlit. These are learning projects, not enterprise software — I build them because
-        I like understanding how systems connect, and each one has taught me something I
-        couldn't get from a course alone.
+        The part of the job I kept gravitating toward was the repetitive part. I built Power
+        Automate workflows at IntermixIT that cut manual data entry and sped up ticket routing
+        across all 70+ accounts, and I've kept building on my own time with n8n, Zapier, Python,
+        and Azure AI. Not enterprise software — working systems I built end to end because that's
+        how the concepts actually stick.
       </p>
       <p>
-        I passed CompTIA A+ Core 1 in July 2026 and I'm currently studying for Core 2. I'm
-        looking for a help desk, desktop support, or IT support role where I can build real
-        technical depth.
+        I passed CompTIA A+ Core 1 in July 2026 and I'm studying for Core 2 now, then moving on
+        to Windows administration, Active Directory, and Intune. The goal is straightforward:
+        build enough real technical depth to move from help desk into a $100K IT role, and
+        document every step of it publicly so the receipts exist.
       </p>
     </div>
     <div class="about-traits">
@@ -467,7 +492,7 @@
 
       <div class="cert-card">
         <div class="cert-status">● Passed</div>
-        <div class="cert-title">CompTIA A+ Core 1 (220-1101)</div>
+        <div class="cert-title">CompTIA A+ Core 1 (220-1201)</div>
         <div class="cert-issuer">CompTIA</div>
         <div class="cert-date">July 24, 2026</div>
         <p class="cert-note">
@@ -478,7 +503,7 @@
 
       <div class="cert-card pending">
         <div class="cert-status">◷ In Progress</div>
-        <div class="cert-title">CompTIA A+ Core 2 (220-1102)</div>
+        <div class="cert-title">CompTIA A+ Core 2 (220-1202)</div>
         <div class="cert-issuer">CompTIA</div>
         <div class="cert-date">Currently Studying</div>
         <p class="cert-note">
@@ -504,8 +529,8 @@
         <div class="cert-issuer">Self-Directed</div>
         <div class="cert-date">Ongoing</div>
         <p class="cert-note">
-          Working toward deeper Windows administration, identity management,
-          and endpoint fundamentals after A+ Core 2.
+          Windows administration, Active Directory, identity management, and
+          Microsoft Intune — the next rung after A+ Core 2.
         </p>
       </div>
 
@@ -517,8 +542,9 @@
         <li><span class="learning-mark">✓</span> Microsoft 365 Fundamentals (MS-900) — certified</li>
         <li><span class="learning-mark">✓</span> CompTIA A+ Core 1 — passed July 2026</li>
         <li><span class="learning-mark dim">◷</span> Studying CompTIA A+ Core 2</li>
-        <li><span class="learning-mark dim">◷</span> Building automation projects with n8n and Zapier</li>
-        <li><span class="learning-mark dim">◷</span> Learning Microsoft Intune and Active Directory</li>
+        <li><span class="learning-mark">✓</span> Power Automate workflows running in production at an MSP</li>
+        <li><span class="learning-mark dim">◷</span> Studying Active Directory and Microsoft Intune</li>
+        <li><span class="learning-mark dim">◷</span> Building automations in n8n and Zapier</li>
         <li><span class="learning-mark dim">◷</span> Practicing Python and REST API fundamentals</li>
       </ul>
     </div>
@@ -534,19 +560,36 @@
 
   <div class="exp-item">
     <div class="exp-meta">
+      <div class="exp-date">AUG 2026 — PRESENT</div>
+      <div class="exp-company">UPMC</div>
+      <div class="exp-type">Contract · Full-time · Remote</div>
+    </div>
+    <div class="exp-content">
+      <div class="exp-title">Help Desk Analyst</div>
+      <ul class="exp-bullets">
+        <li>Provide Tier 1 support during an enterprise Epic EHR go-live, taking high-volume calls from clinical and administrative end users through peak transition periods</li>
+        <li>Triage access, login, and application issues at intake — resolving at Tier 1 where possible and escalating with full symptom, impact, and steps-taken documentation where not</li>
+        <li>Log every contact clearly enough that escalation teams can act without a second call back to the user</li>
+        <li>Work to contract SLAs in a high-volume queue alongside a fully distributed support team</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-meta">
       <div class="exp-date">SEP 2024 — MAR 2026</div>
       <div class="exp-company">INTERMIXIT</div>
       <div class="exp-type">Full-time · Remote · 1 yr 7 mos</div>
     </div>
     <div class="exp-content">
-      <div class="exp-title">Account Manager / IT Support</div>
+      <div class="exp-title">IT Support Specialist / Account Manager</div>
       <ul class="exp-bullets">
-        <li>Managed communication for approximately 70 client accounts in an MSP environment</li>
-        <li>Coordinated approximately 50 monthly service requests using Autotask PSA</li>
-        <li>Served as the liaison between clients and technical engineers, tracking requests through the full ticket lifecycle</li>
-        <li>Assisted with client onboarding, procurement, scheduling, and Quarterly Business Reviews</li>
-        <li>Maintained client records across Microsoft 365 and CRM platforms</li>
-        <li>Documented service history and account details to support engineering handoffs</li>
+        <li>Primary point of contact for approximately 70 client accounts, intaking and driving roughly 50 service tickets per month to resolution</li>
+        <li>Created, prioritized, tracked, and escalated tickets end to end in Autotask PSA, keeping queues moving and clients informed at every stage</li>
+        <li>Built Microsoft Power Automate workflows that eliminated manual data entry and accelerated ticket routing across 70+ client accounts</li>
+        <li>Partnered with engineers on troubleshooting, project planning, procurement, and service delivery to close out client issues</li>
+        <li>Supported client and internal onboarding; maintained accurate account data across Microsoft 365 and CRM</li>
+        <li>Led Quarterly Business Reviews, raising presentation quality and delivery consistency across the account base</li>
       </ul>
     </div>
   </div>
@@ -575,9 +618,9 @@
   <div class="section-label">// 04 — Projects</div>
   <h2 class="section-title">PROJECTS</h2>
   <p class="project-note">
-    These are personal projects I built on my own time to learn practical automation and
-    cloud skills. They aren't production systems — they're how I teach myself by building
-    something end to end rather than following along with a tutorial.
+    The first one ran in production at work. The rest I built on my own time to learn practical
+    automation and cloud skills — not enterprise software, but systems I took end to end rather
+    than following along with a tutorial. Where something has been retired, I say so.
   </p>
 
   <div class="projects-grid">
@@ -585,6 +628,34 @@
     <!-- 01 -->
     <div class="project-card">
       <div class="project-num">01</div>
+      <div class="project-name">Power Automate Workflow Suite</div>
+      <div class="project-kind">Built at Work · In Production</div>
+      <span class="badge-live">● Live</span>
+      <p class="project-desc">
+        A set of Microsoft Power Automate workflows I built at IntermixIT to take manual steps
+        out of the support process. They cut repetitive data entry and sped up ticket routing
+        across all 70+ client accounts.
+      </p>
+
+      <div class="feature-label">What it does</div>
+      <ul class="project-features">
+        <li>Removes manual data entry from recurring support tasks</li>
+        <li>Routes incoming tickets faster across a 70+ account book</li>
+        <li>Keeps records consistent between Microsoft 365 and the PSA</li>
+        <li>Frees queue time for actual troubleshooting</li>
+      </ul>
+
+      <div class="project-tags">
+        <span class="tag">Power Automate</span>
+        <span class="tag">Microsoft 365</span>
+        <span class="tag">Autotask PSA</span>
+        <span class="tag">Process Improvement</span>
+      </div>
+    </div>
+
+    <!-- 02 -->
+    <div class="project-card">
+      <div class="project-num">02</div>
       <div class="project-name">AI Customer Support Automation System</div>
       <div class="project-kind">Personal Portfolio Project</div>
       <p class="project-desc">
@@ -635,14 +706,17 @@
       </div>
     </div>
 
-    <!-- 02 -->
-    <div class="project-card">
-      <div class="project-num">02</div>
+    <!-- 03 -->
+    <div class="project-card dim">
+      <div class="project-num">03</div>
       <div class="project-name">AI Content Repurposing Workflow</div>
       <div class="project-kind">Personal Portfolio Project</div>
+      <span class="badge-retired">◷ Built · Ran · Retired</span>
       <p class="project-desc">
-        Designed and built an automated content pipeline that transforms YouTube videos
-        into social media posts using OpenAI and n8n.
+        An n8n pipeline that turned one YouTube video into a week of cross-platform posts.
+        I built it, ran it, and then retired it — the AI drafts needed enough editing that
+        the approval step cost more time than writing the posts myself. Useful lesson: the
+        bottleneck in content was never the drafting.
       </p>
 
       <div class="flow">
@@ -681,9 +755,9 @@
       </div>
     </div>
 
-    <!-- 03 -->
+    <!-- 04 -->
     <div class="project-card">
-      <div class="project-num">03</div>
+      <div class="project-num">04</div>
       <div class="project-name">AI Image Generator</div>
       <div class="project-kind">Personal Learning Project</div>
       <p class="project-desc">
@@ -708,9 +782,9 @@
       <a class="project-link" href="https://ai-image-app-sl8hgxdvneslevt4usqhbt.streamlit.app/" target="_blank">↗ Live Demo</a>
     </div>
 
-    <!-- 04 -->
+    <!-- 05 -->
     <div class="project-card">
-      <div class="project-num">04</div>
+      <div class="project-num">05</div>
       <div class="project-name">AI Text Analysis App</div>
       <div class="project-kind">Personal Learning Project</div>
       <p class="project-desc">
@@ -750,28 +824,42 @@
     <div>
       <div class="skill-group-title">Technical</div>
 
-      <div class="skill-sub">IT &amp; Support</div>
+      <div class="skill-sub">Help Desk &amp; Support</div>
+      <div class="skill-tags">
+        <span class="skill-pill">Tier 1 Triage</span>
+        <span class="skill-pill">Call Intake &amp; Escalation</span>
+        <span class="skill-pill">Ticketing (Autotask PSA)</span>
+        <span class="skill-pill">Troubleshooting</span>
+        <span class="skill-pill">End-User Support</span>
+        <span class="skill-pill">Remote Support</span>
+        <span class="skill-pill">Onboarding</span>
+        <span class="skill-pill">SLA Management</span>
+        <span class="skill-pill">Documentation</span>
+      </div>
+
+      <div class="skill-sub">Platforms</div>
       <div class="skill-tags">
         <span class="skill-pill">Microsoft 365</span>
-        <span class="skill-pill">Autotask PSA</span>
-        <span class="skill-pill">Windows</span>
+        <span class="skill-pill">Windows 10/11</span>
+        <span class="skill-pill">Epic (end-user support)</span>
         <span class="skill-pill">Hardware Troubleshooting</span>
         <span class="skill-pill">Networking Fundamentals</span>
-        <span class="skill-pill">CompTIA A+</span>
+        <span class="skill-pill">Active Directory (learning)</span>
+        <span class="skill-pill">Microsoft Intune (learning)</span>
       </div>
 
       <div class="skill-sub">Automation &amp; Development</div>
       <div class="skill-tags">
+        <span class="skill-pill">Power Automate</span>
+        <span class="skill-pill">n8n</span>
+        <span class="skill-pill">Zapier</span>
         <span class="skill-pill">Python</span>
         <span class="skill-pill">JavaScript</span>
         <span class="skill-pill">REST APIs</span>
         <span class="skill-pill">Git</span>
-        <span class="skill-pill">Zapier</span>
-        <span class="skill-pill">n8n</span>
         <span class="skill-pill">Azure AI</span>
         <span class="skill-pill">OpenAI APIs</span>
         <span class="skill-pill">Streamlit</span>
-        <span class="skill-pill">Notion</span>
         <span class="skill-pill">Airtable</span>
       </div>
     </div>
@@ -780,13 +868,12 @@
       <div class="skill-group-title">Soft Skills</div>
       <div class="skill-tags">
         <span class="skill-pill">Client Communication</span>
-        <span class="skill-pill">Documentation</span>
+        <span class="skill-pill">Prioritization Under Volume</span>
+        <span class="skill-pill">Technical Documentation</span>
         <span class="skill-pill">Problem Solving</span>
-        <span class="skill-pill">Organization</span>
+        <span class="skill-pill">Self-Directed Learning</span>
         <span class="skill-pill">Adaptability</span>
-        <span class="skill-pill">Fast Learner</span>
         <span class="skill-pill">Collaboration</span>
-        <span class="skill-pill">Time Management</span>
         <span class="skill-pill">Attention to Detail</span>
       </div>
     </div>
@@ -800,33 +887,35 @@
   <div class="section-label">// 06 — Content</div>
   <h2 class="section-title">LEARNING IN PUBLIC</h2>
   <p style="color:var(--gray);font-size:15px;margin-bottom:44px;max-width:580px;line-height:1.7;">
-    I document what I'm learning about AI tools and automation as I go. It keeps me
-    accountable and forces me to actually understand what I build well enough to explain it.
+    I'm documenting the climb from help desk to a $100K IT role in public, under
+    <strong style="color:var(--white);font-weight:500;">@maxxingwithmax</strong> — real numbers, working
+    systems, and the things that didn't pan out. No hype. It keeps me accountable and forces me
+    to understand what I build well enough to explain it on camera.
   </p>
   <div class="content-grid">
     <div class="platform-card">
       <div class="platform-icon">▶</div>
       <div class="platform-name">YouTube</div>
-      <p class="platform-desc">Long &amp; short-form walkthroughs of automations I've built</p>
-      <a class="platform-link" href="https://youtube.com/@magoogpt" target="_blank">@magoogpt</a>
+      <p class="platform-desc">Long-form walkthroughs of the certs, the systems, and the numbers</p>
+      <a class="platform-link" href="https://youtube.com/@maxxingwithmax" target="_blank">@maxxingwithmax</a>
     </div>
     <div class="platform-card">
       <div class="platform-icon">♪</div>
       <div class="platform-name">TikTok</div>
-      <p class="platform-desc">Short breakdowns of AI tools and workflows</p>
-      <a class="platform-link" href="https://www.tiktok.com/@magoogpt" target="_blank">@magoogpt</a>
+      <p class="platform-desc">Short breakdowns of IT career moves, AI tools, and workflows</p>
+      <a class="platform-link" href="https://www.tiktok.com/@maxxingwithmax" target="_blank">@maxxingwithmax</a>
     </div>
     <div class="platform-card">
       <div class="platform-icon">in</div>
       <div class="platform-name">LinkedIn</div>
-      <p class="platform-desc">Project updates and notes on what I'm studying</p>
+      <p class="platform-desc">Certification milestones and notes on what I'm studying</p>
       <a class="platform-link" href="https://www.linkedin.com/in/max-magulick" target="_blank">max-magulick</a>
     </div>
     <div class="platform-card">
       <div class="platform-icon">◎</div>
       <div class="platform-name">Instagram</div>
-      <p class="platform-desc">Behind-the-scenes of projects in progress</p>
-      <a class="platform-link" href="https://www.instagram.com/magoogpt" target="_blank">@magoogpt</a>
+      <p class="platform-desc">Behind-the-scenes of the projects and the study grind</p>
+      <a class="platform-link" href="https://www.instagram.com/maxxingwithmax" target="_blank">@maxxingwithmax</a>
     </div>
   </div>
 </section>
@@ -838,21 +927,21 @@
   <div class="section-label">// 07 — Contact</div>
   <h2 class="section-title">GET IN TOUCH</h2>
   <p class="contact-sub">
-    Looking for a help desk, desktop support, or IT support role in the Pittsburgh area
-    or remote. Happy to talk about any of the projects above.
+    Open to help desk, desktop support, and IT support roles in the Pittsburgh area or remote.
+    Happy to talk through any of the work above — or the automations behind it.
   </p>
   <a href="mailto:maxmagulick@gmail.com" class="contact-email">MAXMAGULICK@GMAIL.COM</a>
   <div class="social-links">
     <a href="https://www.linkedin.com/in/max-magulick" class="social-link" target="_blank">LinkedIn</a>
-    <a href="https://youtube.com/@magoogpt" class="social-link" target="_blank">YouTube</a>
-    <a href="https://www.tiktok.com/@magoogpt" class="social-link" target="_blank">TikTok</a>
-    <a href="https://www.instagram.com/magoogpt" class="social-link" target="_blank">Instagram</a>
+    <a href="https://youtube.com/@maxxingwithmax" class="social-link" target="_blank">YouTube</a>
+    <a href="https://www.tiktok.com/@maxxingwithmax" class="social-link" target="_blank">TikTok</a>
+    <a href="https://www.instagram.com/maxxingwithmax" class="social-link" target="_blank">Instagram</a>
   </div>
 </section>
 
 <footer>
   <span>© 2026 Max Magulick</span>
-  <span>CompTIA A+ · MS-900 · Pittsburgh Area</span>
+  <span>MS-900 · CompTIA A+ Core 1 · @maxxingwithmax · Pittsburgh Area</span>
 </footer>
 
 </body>
